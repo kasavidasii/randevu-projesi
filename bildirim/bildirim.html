@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+ <title>Randevu Bildirimi</title>
+  <style>
+    #mesaj {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .kirmizi {
+      color: red !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="mesaj">Yeni Randevu Bekleniyor...</div>
+  <button id="tamamButonu" style="display:none;">Tamam</button>
+ <!-- Ses dosyası -->
+  <audio id="uyariSesi" src="noti.wav" loop></audio>
+
+  <!-- DİKKAT: script.js'nin yeri doğru olmalı -->
+  <script src="script.js"></script>
+</body>
+</html>

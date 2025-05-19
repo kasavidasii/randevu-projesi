@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Op.Dr.Atakan Eren Üroloji Uzmanı</title>
+  <link rel="icon" href="img/icons/favicon2.png" type="image/png" />
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- RANDEVU KUTUSU -->
+<div class="randevu-kutusu">
+  <button onclick="openModal()">Randevu Al</button>
+</div>
+
+<!-- MODAL PENCERE -->
+<div id="randevuModal" class="modal">
+  <div class="modal-icerik">
+    <span class="kapat" onclick="closeModal()">&times;</span>
+    <h2>Randevu Al</h2>
+    <form>
+      <label>Adınız ve Soyadınız:</label><br>
+      <input type="text" name="adsoyad" required oninvalid="this.setCustomValidity('Lütfen adınızı ve soyadınızı giriniz.')" oninput="setCustomValidity('')"><br><br>
+
+      <label>Telefon Numaranız:</label><br>
+      <input type="tel" name="telefon" placeholder="05XX XXX XX XX" pattern="[0-9]{10,}" required oninvalid="this.setCustomValidity('Lütfen geçerli bir telefon numarası giriniz.')" oninput="setCustomValidity('')"><br><br>
+
+      <label>Tarih:</label><br>
+      <input type="date" name="tarih" required oninvalid="this.setCustomValidity('Lütfen bir tarih seçiniz.')" oninput="setCustomValidity('')"><br><br>
+
+      <label>Saat:</label><br>
+      <select name="saat" required oninvalid="this.setCustomValidity('Lütfen bir saat seçiniz.')" oninput="setCustomValidity('')">
+  <option value="">Saat seçiniz</option> <!-- Varsayılan boş seçenek -->
+</select>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- 🔹 MENÜ -->
+  <header class="navbar">
+    <div class="logo">Op.Dr.Atakan EREN</div>
+    <div class="social-icons">
+    <a href="https://www.instagram.com/kendi_instagram_linkin" target="_blank">
+      <img src="img/icons/instagram.png"  />
+    </a>
+    <a href="https://www.facebook.com/kendi_facebook_linkin" target="_blank">
+      <img src="img/icons/facebook.png"  />
+    </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Anasayfa</a></li>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#opinions">Görüş</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 HERO SLIDER -->
+  <section class="hero-slider" id="hero">
+    <div class="slide active" style="background-image: url('img/banner/atakansite5.png');"></div>
+    <div class="slide" style="background-image: url('img/banner/rezumm.png');"></div>
+    <div class="slide" style="background-image: url('img/banner/atakansite6.png');"></div>
+    <div class="slide" style="background-image: url('img/banner/idrarkaçirma.png');"></div>
+    <div class="slide" style="background-image: url('img/banner/cropen3.png');"></div>
+
+     <!-- 🔘 Noktalı Navigasyon -->
+  <div class="slider-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  </section>
+
+  <!-- 🔹 Hakkımda -->
+<section id="about" class="section">
+  <h2>Benim Hakkımda</h2>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="workk.jpg" alt="Profil Fotoğrafı">
+    </div>
+    <div class="about-text">
+      <h3>Op. Dr. Atakan EREN</h3>
+      <h4>Üroloji Uzmanı</h4>
+      <p>
+        1991 yılında başladığı tıp eğitiminden itibaren çeşitli devlet hastanelerinde görev yapmış, sağlık yöneticiliği ve başhekimlik pozisyonlarında bulunmuş, deneyimli bir Üroloji Uzmanıyımdır.
+      </p>
+      <div class="work-experience">
+        <ul>
+          <li>1991–1997: Cerrahpaşa Tıp Fakültesi</li>
+          <li>1997–2002: Okmeydanı Eğitim ve Araştırma Hastanesi, Üroloji Kliniği</li>
+          <li>2002–2006: Manisa Akhisar Devlet Hastanesi</li>
+          <li>2006–2014: Muratlı Devlet Hastanesi – Başhekim / Üroloji Uzmanı</li>
+          <li>2014–2016: Tekirdağ Devlet Hastanesi – Başhekim</li>
+          <li>2017–2018: Tekirdağ Sağlık Müdürlüğü – Kamu Hastaneleri Başkanı</li>
+          <li>2018–2023: Tekirdağ Şehir Hastanesi – (2023 Mart Emeklilik)</li>
+          <li>2023–: Özel Üroloji Kliniği – Muayenehane Hekimi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 🔹 Hasta görüşleri -->
+
+   <section id="opinions" class="section">
+  <h2>Hasta Görüşleri</h2>
+  <div class="opinion-container">
+
+ <div class="opinion-box">
+      <p>Atakan Bey babamın mesane kanserini erkenden yakalayıp tedavi ve ameliyatlarını başarılı bir şekilde gerçekleştirmiştir. Hastalığımızla ilgili her konuda bize fazlasıyla destek olarak babamın kanserden kurtulmasını sağlamıştır. Hiçbir sorumuzu cevapsız bırakmamış,mesleki bilgi ve donanımıyla bize hep destek olmuştur. Başarılı bir cerrah olmanın yanı sıra insani değerlere verdiği önemle her hastasına eşit,nazik,anlayışlı,açıklayıcı,dürüst davranmasıyla da ne kadar güzel bir insan olduğunu kanıtlamıştır. Atakan bey gibi bir doktor bizim için bir şanstır ve sürecimizin kendisiyle devam etmesinden çok mutluyuz. Kendisini mesleğine adamış dört dörtlük bir doktordur herşey için teşekkür ederiz.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box">
+      <p>Atakan Bey'den Tekirdağ halkı ve şahsım adına çok memnunum. Kendisi çok ilgilenip, yardımcı oluyor. Allah ondan razı olsun. Böbreklerimde kum döktüğüm için gittim. Ailemde irsi olarak prostat rahatsızlığı var. 6 ayda senede 1 kere kontrollerime Atakan Bey'e gidiyorum. Çok memnun kaldığım için kimin sorunu varsa arkadaşlarımı, ailemi de kendisine yönlendiriyorum. Kendisi çok ilgilenip, bize sahip çıkıyor.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box">
+      <p>Atakan Bey gerçekten alanından, bölümünde çok iyi bir doktor. Hastaları yüzde yüz memnuniyetle çıkıyor. Aynı zamanda insanlara karşı yaklaşımı insanların hastalıklarını çözme becerisi var. Böbreklerimde küçük bir taş vardı kendisi tedavi uyguladı. Sağ olsun sorunumu çözdü.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box">
+      <p>Atakan Bey sağ olsun çok ilgili davrandı. Kendisinden memnun kaldım. Atakan Bey ilgili bir doktor. Kendisi takibimi sağladı ve yardımcı oldu.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box">
+      <p>Prostatımla ilgili sıkıntılarım vardı Atakan Bey ameliyatımı gerçekleştirdi. Kendisi çok iyi, çok tecrübeli, hastasıyla diyaloğu çok iyi bir doktor. Öncesinde ve sonrasını, tedavi sürecinizi her zaman takip ediyor. Çok mutluyuz. Atakan Bey iyi ki var.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box" >
+
+      <!-- Gizli olan görüşler -->
+      <p>Oğlum geçen sene böbrek kanalında problem yaşadı Atakan Bey'e muayene olduk. Kendisi sağ olsun her konuyla ilgilendi. Tespitini çok iyi yaparak, teşhisini koydu. Ameliyatı başarılı geçti. Güler yüzlü, tatlı dilli bir kişi. Her konuda yardımcı oldu.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box extra-opinion" style="display: none;">
+      <p>Babam üreter kanseri, tek böbreği İstanbul'da farklı bir doktor tarafından alındı. Tedavi sürecimize Atakan Bey'le devam ediyoruz. Kendisinden ve tedavi sürecimizden çok memnunuz.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box extra-opinion" style="display: none;">
+      <p>Daha önce böbrek taşı kırdırma operasyonu olmuştum. Bu yaz çocuğumun sünnet operasyonunu gerçekleştirdi. Güleryüzlü, sevecen, bilgilendirici bir doktor. Alanında başarılı.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box extra-opinion" style="display: none;">
+      <p>Atakan Hocam Tekirdağ'da en kıymetlimiz. Allah başımızdan eksik etmesin. Prostat ve hormon sorunlarımda ona gidiyorum. Babamı da götürdüm. Herkes çok memnun.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box extra-opinion" style="display: none;">
+      <p>Böbrek taşı ameliyatı oldum. 6 ay acısını çektiğim taşı aldı. Süreci baştan sona çok iyi yönetti. Gece aramalarına dahi cevap verdi. Kesinlikle tavsiye ediyorum.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box extra-opinion" style="display: none;">
+      <p>Doktor Atakan, hem hekimlik tecrübesi hem de ilgisiyle mükemmel bir insan. Ürolojik rahatsızlığıma teşhis ve tedavi ile sağlığıma kavuştum. Sonsuz teşekkürler.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+    <div class="opinion-box extra-opinion" style="display: none;">
+      <p>07.01.2021'de çift taraflı varikosel ameliyatı oldum. Bu kadar sevecen, ilgili bir doktor zor bulunur. Ameliyat olduğunu bile anlamadım. Allah razı olsun, Tekirdağ'dan saygılar.</p>
+      <p><strong>Hasta</strong> <span class="stars">★★★★★</span></p>
+    </div>
+  </div>
+   <!-- Devamını göster butonu -->
+    <button id="show-more-btn" class="show-more-btn">Daha Fazla Göster</button>
+
+  </div>
+</section>
+
+     <!-- Galeri -->
+  <section id="gallery" class="section">
+  <h2>Galeri</h2>
+
+ 
+
+  <div class="gallery">
+    <img src="img/galleri1.jpg" alt="Resim 1" onclick="openLightbox(this)">
+    <img src="img/galeri2.jpg" alt="Resim 2" onclick="openLightbox(this)">
+    <img src="img/galeri3.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <img src="img/galeri4.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <img src="img/galeri5.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <img src="img/galeri6.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <img src="img/galeri7.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <img src="img/galeri8.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <img src="img/galeri9.jpg" alt="Resim 3" onclick="openLightbox(this)">
+    <!-- Daha fazla resim buraya -->
+ 
+  </div>
+
+  <!-- Lightbox (gizli halde) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+</section>
+
+ <!-- İletişim -->
+  <section id="contact" class="section">
+  <h2>İletişim</h2>
+  <div class="contact-container">
+    <!-- Sol: Harita -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12093.462557534903!2d27.5695648!3d40.9837875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzAxLjYiTiAyN8KwMzQnMTAuNCJF!5e0!3m2!1str!2str!4v1681056929677!5m2!1str!2str"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Sağ: Bilgiler -->
+    <div class="contact-info">
+      <p><strong>Adres:</strong><br>
+        Hürriyet Mah. Necati Sezen Sok. No:26/1E<br>
+        59030 Tekirdağ, Tekirdağ</p>
+
+      <p><strong>Randevu Al:</strong><br>
+        <a href="tel:+908503330388">+90 850 333 03 88</a></p>
+
+      <p><strong>İletişime Geç:</strong><br>
+        <a href="tel:+905382807359">+90 538 280 73 59</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>© 2025 Tüm hakları saklıdır.</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
